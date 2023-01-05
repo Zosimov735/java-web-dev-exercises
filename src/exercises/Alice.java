@@ -15,7 +15,10 @@ public class Alice {
         String userValue = input.nextLine();
         userValue = userValue.toLowerCase();
         boolean sentenceCheck = sentence.contains(userValue);
-        System.out.println(sentenceCheck);
-
+        int userValueIndex = sentence.indexOf(userValue);
+        int userValueLength = userValue.length();
+        System.out.println(userValueIndex + " " + userValueLength);
+        String sentenceReplaced = sentence.replace(userValue, "");
+        System.out.print(sentenceReplaced.trim());
     }
 }
