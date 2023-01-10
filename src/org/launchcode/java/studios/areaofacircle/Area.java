@@ -12,7 +12,7 @@ public class Area {
             }
             radius = input.nextDouble();
         } while(radius < 0);
-        Double area = 3.14 * radius * radius;
-        System.out.println(Circle.getArea(radius));
+        //Double area = 3.14 * radius * radius;
+        System.out.println("The area of a circle with radius " + radius + " is: " + Circle.getArea(radius));
     }
 }
